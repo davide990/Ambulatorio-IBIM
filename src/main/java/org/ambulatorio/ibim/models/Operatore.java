@@ -18,10 +18,10 @@ public class Operatore implements Serializable
     private Long id;
 
     @Size(min = 5)
-    private String username;
+    private String nome;
 
     @Size(min = 5)
-    private String password;
+    private String cognome;
 
     @ManyToOne
     @JoinColumn
@@ -37,24 +37,24 @@ public class Operatore implements Serializable
         this.id = id;
     }
 
-    public String getUsername()
+    public String getNome()
     {
-        return username;
+        return nome;
     }
 
-    public void setUsername(String username)
+    public void setNome(String nome)
     {
-        this.username = username;
+        this.nome = nome;
     }
 
-    public String getPassword()
+    public String getCognome()
     {
-        return password;
+        return cognome;
     }
 
-    public void setPassword(String password)
+    public void setCognome(String cognome)
     {
-        this.password = password;
+        this.cognome = cognome;
     }
 
     public Ruolo getRuolo()

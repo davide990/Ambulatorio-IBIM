@@ -1,15 +1,36 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.ambulatorio.ibim.controller;
 
-/**
- *
- * @author davide
- */
-public class CredenzialiOperatore
+import java.io.Serializable;
+import javax.validation.constraints.Size;
+
+
+public class CredenzialiOperatore implements Serializable
 {
+     @Size(min = 5)
+    private String username;
+
+    @Size(min = 5)
+    private String password;
+
+    
+     public String getUsername()
+    {
+        return username;
+    }
+
+    public void setUsername(String username)
+    {
+        this.username = username;
+    }
+
+    public String getPassword()
+    {
+        return password;
+    }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
 
 }
