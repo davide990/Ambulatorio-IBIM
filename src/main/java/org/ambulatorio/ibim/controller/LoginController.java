@@ -66,7 +66,7 @@ public class LoginController implements Serializable
         if (utente != null)
         {
             this.operatoreLoggato = utente;
-            return "persona_main";
+            return null;
         } else
         {
             //Show an error message notifying the user about the failed login
